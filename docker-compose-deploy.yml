@@ -9,8 +9,8 @@ services:
         env_file: 
             - .env
         environment: 
-            - SECRET_KEY=samplesecretkey123
-            - ALLOWED_HOSTS=127.0.0.1,localhost
+            - SECRET_KEY=${SECRET_KEY}
+            - ALLOWED_HOSTS=${ALLOWED_HOSTS}
 
     proxy:
         build: 
