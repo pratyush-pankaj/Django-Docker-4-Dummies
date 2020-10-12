@@ -34,4 +34,3 @@ USER user
 
 CMD ["entrypoint.sh"]
 
-EXPOSE 8000
