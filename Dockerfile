@@ -1,7 +1,7 @@
 FROM python:3.7-alpine
 RUN apk update
 RUN apk add build-base
-RUN pip install -U pylint
+# RUN pip install -U pylint
 
 RUN apk add --update --no-cache mysql-client jpeg-dev
 RUN apk add --update --no-cache --virtual .tmp-build-deps \
