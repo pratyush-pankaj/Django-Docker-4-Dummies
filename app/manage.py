@@ -2,6 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+#remove the following if want to docker-compose up -d. This is for vscode dev container only
 from dotenv import load_dotenv
 load_dotenv()
 
