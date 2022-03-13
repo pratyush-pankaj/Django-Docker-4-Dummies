@@ -36,7 +36,7 @@
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"visualstudioexptteam.vscodeintell",
-		// "cweijan.vscode-mysql-client2"
+		"cweijan.vscode-mysql-client2"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
