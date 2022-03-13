@@ -3,8 +3,8 @@
 import os
 import sys
 #remove the following if want to docker-compose up -d. This is for vscode dev container only
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')
