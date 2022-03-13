@@ -37,12 +37,18 @@ docker v > 19.03
 docker-compose v > 1.26
 
 ## Process
+Configure your env file as per your need. Or you can leave it as it is and it will work perfectly fine.
+./init.sql file creates the db for the first time.
+
 ```bash
 cp .env.sample .env
 docker-compose build
-docker-compose up -d
+docker-compose up       #to see the installation and running container for error monitoring (Recommended for the first time)
+docker-compose up -d    #to run the process in the background
 ```
 ** Warning: If you face issue while running django application because of the db connection issue. Then just go to mysql cli by using the command given below and create your required database first. And migrate it using docker-compose and manage.py. Also given below.
+
+Please run migration once for the first time.
 
 ## Start app
 [localhost:8000](http://localhost:8000/)
@@ -66,15 +72,18 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-Install MySql client extention on vscode. And configure it to the running db.
-Host: host.docker.internal
-Port: 5504
-
 Then replace the commented things in settings.py in Databases settings
 ```bash
 "host.docker.internal"
 "5504"
 ```
+
+* Now install Remote Container extention for VS Code. And run the folder in the remote container.
+* Install MySql client extention on vscode. And configure it to the running db.
+    Host: host.docker.internal
+    Port: 5504
+* Rebuild the container from command pallet.
+* Good to go. Happy Coding and Debugging.
 
 ## Contact
 Pratyush Pankaj - https://www.linkedin.com/in/pratyushpankaj/ - https://github.com/ronnyrules
