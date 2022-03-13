@@ -9,7 +9,7 @@ docker-compose v > 1.26
 
 ## Process
 ```bash
-cp .env-sample .env
+cp .env.sample .env
 docker-compose build
 docker-compose up -d
 ```
