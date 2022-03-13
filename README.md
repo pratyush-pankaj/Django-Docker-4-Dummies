@@ -1,4 +1,4 @@
-# DJANGO-O-DOCKER
+# DJANGO-DOCKER-4-DUMMIES
 5 MINT TEMPLATE INSTALLATION. A template for running Python Django Over A Docker Container running on an Nginx proxy server with MySql db and phpmyadmin support.
 
 ## Supported OS
