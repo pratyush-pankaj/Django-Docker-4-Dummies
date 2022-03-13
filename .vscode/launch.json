@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",	
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/app/manage.py",
+            "args": [
+                "runserver",
+                "0.0.0.0:8000",
+                "--nothreading",
+                "--noreload"
+            ],
+            "django": true,
+            "justMyCode": true,
+        },
+        {
+            "name": "Remote Django App",
+            "type": "python",
+            "request": "attach",
+            "pathMappings": [
+              {
+                "localRoot": "${workspaceFolder}",
+                "remoteRoot": "/app"
+              }
+            ],
+            "port": 8000,
+            // "host": "host.docker.internal"
+            "host": "127.0.0.1"
+        }
+    ]
+}

@@ -28,8 +28,10 @@ services:
             MYSQL_USER: ${DB_USER}
             MYSQL_PASSWORD: ${DB_PASSWORD}
             MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        command: --init-file /data/application/init.sql
         volumes:
             - my-db:/var/lib/mysql
+            - ./init.sql:/data/application/init.sql
 
     phpmyadmin:
         depends_on:
