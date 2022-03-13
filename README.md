@@ -42,7 +42,7 @@ cp .env.sample .env
 docker-compose build
 docker-compose up -d
 ```
-Warning: If you face issue while running django application because of the db connection issue. Then just go to mysql cli by using the command given below and create your required database first. And migrate it using docker-compose and manage.py. Also given below.
+** Warning: If you face issue while running django application because of the db connection issue. Then just go to mysql cli by using the command given below and create your required database first. And migrate it using docker-compose and manage.py. Also given below.
 
 ## Start app
 [localhost:8000](http://localhost:8000/)
@@ -76,6 +76,9 @@ Then replace the commented things in settings.py in Databases settings
 "5504"
 ```
 
+## Contact
+Pratyush Pankaj - https://www.linkedin.com/in/pratyushpankaj/ - https://github.com/ronnyrules
+Template Link - https://github.com/ronnyrules/django-o-docker
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
