@@ -1,0 +1,2 @@
+a="Sunny"
+print(a)
