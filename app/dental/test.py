@@ -1,2 +1,0 @@
-a="Sunny"
-print(a)
