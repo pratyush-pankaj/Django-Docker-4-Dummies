@@ -20,5 +20,5 @@ from app import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    # path('dental/', include('dental.urls'))
+    path('api/v1/', include('splitzer.urls'))
 ]
